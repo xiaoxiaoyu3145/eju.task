@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.data.StoreOpenMapper">
+	
+	<resultMap type="com.example.demo.data.entity.REPCrmStore" id="repCrmStore">
+		<id column="id" property="id"/>
+		<result column="storeNo" property="storeNo"/>
+		<result column="name" property="name"/>
+		<result column="cityNo" property="cityNo"/>
+		<result column="address" property="address"/>
+		<result column="ABTypeStore" property="ABTypeStore"/>
+		<result column="BTypeStore" property="BTypeStore"/>
+		<result column="userCreate" property="userCreate"/>
+		<result column="storeStatus" property="storeStatus"/> 
+		<result column="dateCreate" property="dateCreate"/>
+		<result column="addressDetail" property="addressDetail"/>
+		<result column="maintainer" property="maintainer"/>
+		<result column="contacts" property="contacts"/>
+		<result column="maintainerName" property="maintainerName"/>
+		<result column="decorationState" property="decorationState"/>
+		<result column="deposit" property="deposit"/>
+		<result column="decoractionFeeOne" property="decoractionFeeOne"/>
+		<result column="decoractionFeeTwo" property="decoractionFeeTwo"/>
+		<result column="datePayDcrtFeeOne" property="datePayDcrtFeeOne"/>
+		<result column="datePayDcrtFeeTwo" property="datePayDcrtFeeTwo"/>
+		<result column="pleasePayNoOne" property="pleasePayNoOne"/>
+		<result column="pleasePayNoTwo" property="pleasePayNoTwo"/>
+		<result column="dateAccountDeposit" property="dateAccountDeposit"/>
+		<result column="decorationCompNm" property="decorationCompNm"/>
+		<result column="decorationContractNo" property="decorationContractNo"/>
+		<result column="dateDecorationBill" property="dateDecorationBill"/>
+		<result column="oaFlopNo" property="oaFlopNo"/>
+		<result column="dateFlopCkAccept" property="dateFlopCkAccept"/>
+		<result column="districtNo" property="districtNo"/>
+		<result column="userName" property="userName"/>
+		<result column="userCode" property="userCode"/>
+	</resultMap>
+	
+	<select id="count"  resultType="java.lang.Integer">
+		select count(0) from CRM_Store
+	</select>
+	
+</mapper>

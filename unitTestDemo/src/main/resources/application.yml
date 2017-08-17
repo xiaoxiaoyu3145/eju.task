@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url:
+    username: 
+    password: 
+    tomcat:
+      initial-size: 0
+        
+logging:
+  level:
+    root: DEBUG
+        
+server:
+  port: 9090
